@@ -9,31 +9,32 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Alphin Tom | Data Analyst">
 <meta property="og:description" content="Audit analytics at EY, Alteryx, SQL, Python and Power BI. Built an Axon data chatbot for managers and teach data analytics and AI.">
-<meta property="og:url" content="https://alphinn.github.io/">
-<meta property="og:image" content="https://alphinn.github.io/og-image.png">
+<meta property="og:url" content="https://alphinn.github.io/portfolio/">
+<meta property="og:image" content="https://alphinn.github.io/portfolio/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Alphin Tom | Data Analyst">
-<meta name="twitter:image" content="https://alphinn.github.io/og-image.png">
+<meta name="twitter:image" content="https://alphinn.github.io/portfolio/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,400..700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@500;600;700;800&family=Montserrat:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#f4f6f1; --card:#ffffff; --ink:#15231f; --muted:#52615b; --line:#d5ddd4;
-  --accent:#2437c4; --accent-ink:#ffffff; --ok:#1d7a4d;--hl:#b4500a; --tint:#e6ece3;
-  --display:'Fraunces',Georgia,'Times New Roman',serif; --body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --paper:#ffffff; --card:#ffffff; --ink:#202124; --muted:#454A50; --line:#dcdfe3;
+  --accent:#A7ADB4; --acc-text:#202124; --acc-fill:#202124; --accent-ink:#ffffff; --ok:#1d7a4d;--hl:#b4500a; --tint:#ffffff;
+  --shadow-soft:0 1px 2px rgba(32,33,36,.06),0 6px 16px rgba(32,33,36,.06); --ledger-shadow:0 2px 4px rgba(32,33,36,.06),0 10px 24px rgba(32,33,36,.08);
+  --display:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif; --title:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif; --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--paper:#0f1815;--card:#17231f;--ink:#e9efe9;--muted:#9fb0a8;--line:#2a3a35;--accent:#8fa0ff;--accent-ink:#0f1815;--ok:#6fd49b;--tint:#1b2a25;--hl:#ffb454}
+  :root:not([data-theme="light"]){--paper:#0f1815;--card:#17231f;--ink:#e9efe9;--muted:#9fb0a8;--line:#2a3a35;--accent:#8fa0ff;--accent-ink:#0f1815;--ok:#6fd49b;--tint:#1b2a25;--hl:#ffb454;--acc-text:#8fa0ff;--acc-fill:#8fa0ff;--shadow-soft:none;--ledger-shadow:6px 6px 0 #1b2a25}
 }
-:root[data-theme="dark"]{--paper:#0f1815;--card:#17231f;--ink:#e9efe9;--muted:#9fb0a8;--line:#2a3a35;--accent:#8fa0ff;--accent-ink:#0f1815;--ok:#6fd49b;--tint:#1b2a25;--hl:#ffb454}
+:root[data-theme="dark"]{--paper:#0f1815;--card:#17231f;--ink:#e9efe9;--muted:#9fb0a8;--line:#2a3a35;--accent:#8fa0ff;--accent-ink:#0f1815;--ok:#6fd49b;--tint:#1b2a25;--hl:#ffb454;--acc-text:#8fa0ff;--acc-fill:#8fa0ff;--shadow-soft:none;--ledger-shadow:6px 6px 0 #1b2a25}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:3px solid var(--acc-text);outline-offset:3px;border-radius:4px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:var(--display);line-height:1.1;letter-spacing:-.02em}
 h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;margin-bottom:28px}
@@ -43,7 +44,7 @@ p{max-width:68ch}
 /* nav */
 header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
-.logo{font:800 1.15rem var(--display);text-decoration:none}
+.logo{font:800 1.15rem var(--title);text-decoration:none}
 .nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:.95rem;font-weight:500}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover{color:var(--ink)}
@@ -64,14 +65,14 @@ header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--pa
 /* hero */
 .hero{padding:80px 0 72px;border:0}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.7rem);font-weight:800}
 .hero .sub{font-size:1.2rem;color:var(--muted);margin:22px 0 30px}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent);transition:transform .15s}
-.btn.p{background:var(--accent);color:var(--accent-ink)}
-.btn.s{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--acc-fill);transition:transform .15s}
+.btn.p{background:var(--acc-fill);color:var(--accent-ink)}
+.btn.s{color:var(--acc-text)}
 .btn:hover{transform:translateY(-2px)}
-.ledger{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;font-variant-numeric:tabular-nums;box-shadow:6px 6px 0 var(--tint)}
+.ledger{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;font-variant-numeric:tabular-nums;box-shadow:var(--ledger-shadow)}
 .ledger h3{font-size:.95rem;font-weight:700;color:var(--muted);margin-bottom:12px}
 .ledger table{width:100%;border-collapse:collapse;font-size:.98rem}
 .ledger td{padding:9px 0;border-bottom:1px dashed var(--line)}
@@ -96,7 +97,7 @@ header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--pa
 .tl li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
 .tl h3{font-size:1.3rem;font-weight:700}
 .tl .org{color:var(--muted);font-weight:500}
-.tl .when{display:inline-block;margin:6px 0 10px;font-size:.88rem;font-weight:600;background:var(--tint);padding:2px 10px;border-radius:99px}
+.tl .when{display:inline-block;margin:6px 0 10px;font-size:.88rem;font-weight:600;background:var(--tint);border:1px solid var(--line);padding:2px 10px;border-radius:99px}
 .tl ul{padding-left:18px;max-width:70ch}
 .tl ul li{padding:0 0 6px;border:0}
 .tl ul li::before{display:none}
@@ -111,11 +112,11 @@ header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--pa
 /* projects */
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
 .proj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
-.proj .tag{font-size:.85rem;font-weight:600;color:var(--accent)}
+.proj .tag{font-size:.85rem;font-weight:600;color:var(--acc-text)}
 .proj h3{font-size:1.4rem;margin:6px 0 10px}
 .proj p{color:var(--muted)}
 .proj .chips{margin-top:16px}
-.pub{margin-top:22px;padding:20px 24px;border-left:4px solid var(--accent);background:var(--tint);border-radius:0 12px 12px 0}
+.pub{margin-top:22px;padding:20px 24px;border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--card);border-radius:0 12px 12px 0}
 .pub b{font-family:var(--display)}
 
 /* edu + certs */
@@ -143,12 +144,8 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem;border-top:1px sol
 
 /* ---- v2: richer look + hover magnify ---- */
 .hero{position:relative;overflow:hidden}
-.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;z-index:0;pointer-events:none}
-.hero::before{width:380px;height:380px;background:var(--accent);top:-120px;right:-80px}
-.hero::after{width:300px;height:300px;background:var(--ok);bottom:-140px;left:-60px;opacity:.22}
 .hero .wrap{position:relative;z-index:1}
 h2::after{content:"";display:block;width:56px;height:5px;border-radius:3px;background:var(--accent);margin-top:10px}
-section:nth-of-type(even){background:linear-gradient(180deg,var(--tint),transparent 70%)}
 
 .ledger,.facts li,.proj,.group,.edu li,.pub,.tl>li,.certs li,.chips li,.btn{
   transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s,border-color .28s,background .28s}
@@ -165,16 +162,16 @@ section:nth-of-type(even){background:linear-gradient(180deg,var(--tint),transpar
     transform:translateY(-4px);background:var(--card);border-color:var(--accent);
     box-shadow:0 14px 30px rgba(21,35,31,.14);position:relative;z-index:3}
   .tl>li:hover{transform:translateY(-3px)}
-  .chips li:hover{transform:translateY(-2px);border-color:var(--accent);background:var(--accent);color:var(--accent-ink);position:relative;z-index:3}
+  .chips li:hover{transform:translateY(-2px);border-color:var(--acc-fill);background:var(--acc-fill);color:var(--accent-ink);position:relative;z-index:3}
   .btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(21,35,31,.18)}
 }
-.proj.feat{grid-column:1/-1;background:var(--accent);color:var(--accent-ink);border-color:var(--accent);border-top-color:var(--ok)}
+.proj.feat{grid-column:1/-1;background:var(--acc-fill);color:var(--accent-ink);border-color:var(--acc-fill);border-top-color:var(--ok)}
 .proj.feat .tag{color:var(--accent-ink);opacity:.85}
 .proj.feat p{color:var(--accent-ink);opacity:.92;max-width:75ch}
 .proj.feat p+p{margin-top:10px}
 .proj.feat .chips li{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.35);color:var(--accent-ink)}
 .badge{display:inline-block;margin-left:8px;font-size:.78rem;font-weight:600;padding:2px 10px;border-radius:99px;background:var(--ok);color:#fff;vertical-align:middle}
-@media (hover:hover){.proj.feat:hover{background:var(--accent)}}
+@media (hover:hover){.proj.feat:hover{background:var(--acc-fill)}}
 
 .rv{opacity:0}
 .rv.in{opacity:1;animation:rise .65s cubic-bezier(.2,.8,.2,1) backwards}
@@ -202,9 +199,10 @@ body{font-size:1.05rem;line-height:1.7}
 h1,h2,h3{letter-spacing:-.015em;font-optical-sizing:auto}
 h1{font-weight:700;line-height:1.05}
 h2{font-weight:700}
-h1 em,h2 em{font-style:italic;font-weight:500;color:var(--accent)}
+h1 em{font-style:italic;font-weight:600;color:var(--acc-text);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:.09em;text-underline-offset:.14em}
+h2 em{font-style:normal;font-weight:500;color:var(--muted)}
 .logo{font-weight:700;font-style:italic}
-.lead{font-family:var(--display);font-style:italic;font-size:1.3rem;line-height:1.5;color:var(--ink)}
+.lead{font-family:var(--body);font-style:italic;font-size:1.3rem;line-height:1.5;color:var(--ink)}
 .hero .sub{font-size:1.15rem}
 .tl .org,.intro span,.hint,.ledger .stamp,.proj .tag,.edu span,.certs small,.pub em,.facts span{font-style:italic}
 .tl .org{font-weight:400}
@@ -226,7 +224,7 @@ footer{font-style:italic}
 .acc-card.active .txt{opacity:1;transition:opacity .45s ease .22s}
 .acc-card .txt b{display:block;font:600 1.3rem/1.15 var(--display);overflow:hidden;text-overflow:ellipsis}
 .acc-card .txt span{display:block;font:400 .93rem var(--body);font-style:italic;opacity:.92;margin-top:2px;overflow:hidden;text-overflow:ellipsis}
-.acc-card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.acc-card:focus-visible{outline:3px solid var(--acc-text);outline-offset:3px}
 @media(max-width:640px){
   .accordion{flex-direction:column;height:560px}
   .acc-card{min-width:0;min-height:56px}
@@ -236,6 +234,19 @@ footer{font-style:italic}
   .acc-card .txt b{font-size:1.1rem}
   .acc-card .txt span{font-size:.88rem}
 }
+/* v4: Montserrat titles, Manrope headings, Inter body */
+h1,.tl h3,.proj h3,.intro b,.logo{font-family:var(--title)}
+.tl h3,.proj h3{font-weight:700}
+.logo{font-style:normal;font-weight:800}
+/* soft silver card shadows */
+.facts li,.proj,.certbox,.pub{box-shadow:var(--shadow-soft)}
+/* bigger hero portrait and name */
+.intro{gap:22px;margin-bottom:28px}
+.intro img{width:140px;height:140px;border-width:4px;box-shadow:0 0 0 6px var(--tint),var(--shadow-soft)}
+.intro b{font:800 clamp(1.7rem,3.6vw,2.3rem)/1.1 var(--title);letter-spacing:-.01em}
+.intro span{font-size:1.1rem;margin-top:4px}
+@media(max-width:480px){.intro{gap:16px}.intro img{width:108px;height:108px}}
+.btn svg{flex:none}
 </style>
 </head>
 <body>
@@ -257,7 +268,7 @@ footer{font-style:italic}
 <section class="hero">
   <div class="wrap">
     <div>
-      <div class="intro"><img src="photo.jpg" alt="Portrait of Alphin Tom" width="88" height="88"><div><b>Alphin Tom</b><span>Data Analyst &middot; Kerala, India</span></div></div>
+      <div class="intro"><img src="photo.jpg" alt="Portrait of Alphin Tom" width="140" height="140"><div><b>Alphin Tom</b><span>Data Analyst &middot; Kerala, India</span></div></div>
       <h1>I make <em>audit data</em> add up.</h1>
       <p class="sub">Data analyst with EY client experience in General Ledger, Subledger, Inventory and Payroll data. I clean, reconcile and validate large datasets with Alteryx, SQL, Python and Excel, and I teach others to do the same.</p>
       <div class="btns">
@@ -265,11 +276,11 @@ footer{font-style:italic}
         <a class="btn s" href="#contact">Get in touch</a>
       </div>
     </div>
-    <div class="ledger" role="img" aria-label="Summary of experience: 25 plus EY client engagements, 4 data sources, an Axon data chatbot for managers, 0 reconciliation difference">
+    <div class="ledger" role="img" aria-label="Summary of experience: 25 plus EY client engagements, more than 4 data sources, an Axon data chatbot for managers, 0 reconciliation difference">
       <h3>Reconciliation summary</h3>
       <table aria-hidden="true">
         <tr><td>EY client engagements</td><td>25+</td></tr>
-        <tr><td>Data sources (GL, Subledger, Inventory, Payroll)</td><td>4</td></tr>
+        <tr><td>Data sources (GL, Subledger, Inventory, Payroll)</td><td>4+</td></tr>
         <tr><td>Alteryx workflows built</td><td>Cleanse, transform, reconcile</td></tr>
         <tr><td>Axon data chatbot for managers</td><td>Started at EY</td></tr>
         <tr class="total"><td>Difference</td><td class="ok">0.00 &#10003;</td></tr>
@@ -285,8 +296,8 @@ footer{font-style:italic}
     <div class="about">
       <div>
         <p class="lead">I'm a data analyst focused on audit analytics: validating, governing and reconciling large financial datasets so that the numbers teams rely on are right.</p>
-        <p>At EY Trivandrum I delivered 25+ client engagements and worked directly with Netherlands-based stakeholders. I also started an initiative to build a chatbot that lets managers query Axon data in plain language. I'm now a faculty member at AgenticX, teaching Data Analytics, AI and ML, while completing an MBA in Business Analytics at Lovely Professional University.</p>
-        <p>Outside of work I organise events, lead teams and play volleyball, which is where I learned coordination and leadership.</p>
+        <p>At EY Trivandrum I delivered 25+ client engagements and worked directly with Netherlands-based stakeholders. I also started an initiative to build a chatbot that lets managers query Axon data in plain language. Previously, I worked as a Data Analytics, AI, and ML faculty member at AgenticX, and I am currently pursuing an MBA in Business Analytics at Lovely Professional University.</p>
+        <p>Beyond analytics, leading teams, organizing large-scale events, and captaining college volleyball sharpened my coordination and decision-making under pressure.</p>
       </div>
       <ul class="facts">
         <li><b>25+</b><span>client engagements delivered at EY</span></li>
@@ -303,7 +314,7 @@ footer{font-style:italic}
     <ol class="tl">
       <li>
         <h3>Faculty <span class="org">&middot; AgenticX, Kollam, Kerala</span></h3>
-        <span class="when">June 2026</span>
+        <span class="when">Ended June 2026</span>
         <ul>
           <li>Train learners in Data Analytics, AI and ML using Excel, Alteryx, Power BI, Python and ML tools.</li>
           <li>Teach data cleaning, transformation, dashboards, ETL workflows, real-world projects, and ML concepts including regression, classification and NLP.</li>
@@ -316,8 +327,8 @@ footer{font-style:italic}
         <ul>
           <li>Delivered 25+ client engagements by analysing General Ledger, Subledger, Inventory and Payroll data to generate business insights.</li>
           <li>Worked with Netherlands-based stakeholders on analytics solutions, keeping data accurate and well governed.</li>
-          <li>Built Alteryx workflows for data cleansing, transformation and reconciliation, improving efficiency and data integrity.</li>
-          <li><b>Self-started initiative:</b> began building a chatbot for managerial-level colleagues to interact with Axon data and retrieve the information they need without manual data requests.</li>
+          <li>Automated recurring cleansing and reconciliation checks in Alteryx, cutting manual prep time and increasing overall team throughput across engagements.</li>
+          <li><b>Self-started initiative:</b> initiated an Axon data chatbot for managers to self-serve routine queries, cutting ad-hoc data requests and freeing up analyst bandwidth across the team.</li>
         </ul>
       </li>
       <li>
@@ -457,6 +468,7 @@ footer{font-style:italic}
       <a class="btn p" href="mailto:alphintom2003@gmail.com">alphintom2003@gmail.com</a>
       <a class="btn s" href="https://linkedin.com/in/alphin-tom-075012280/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn s" href="https://github.com/alphinn" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn s" href="resume.pdf" download="Alphin_Tom_Resume.pdf"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h4"/><path d="M12 4.5v7M10 6h2M12 8h2M10 10h2"/><rect x="10.5" y="12.5" width="3" height="4.5" rx="1"/></svg>Download Resume</a>
       <a class="btn s" href="tel:+919497326281">+91 94973 26281</a>
     </div>
     <p style="margin-top:22px;color:var(--muted);font-size:1rem">Based in Nilambur, Kerala.</p>
